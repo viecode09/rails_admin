@@ -8,7 +8,7 @@ module RailsAdmin
       return nil unless wording.present? && wording.is_a?(String)
 
       wording = wording.dup
-      wording[0] = wording[0].capitalize.to_s
+      wording[0] = wording[0].to_s.capitalize
       wording
     end
 
